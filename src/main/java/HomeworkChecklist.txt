@@ -1,41 +1,41 @@
 TODO HOMEWORK CHECKLIST:
 PROGRAMMING TASKS:
     SongDatabase.java
-        [ ] Complete the 'addSong' method
-        [ ] Throw an IllegalArgumentException when a playlist of the given name already exists in the 'createPlaylist' method
-        [ ] Complete the 'getPlaylist' method
-        [ ] Complete the 'addSongToPlaylist' method
-        [ ] Complete the 'findSongByName' method
-        [ ] Complete the 'findSongByArtist' method
+        [X] Complete the 'addSong' method
+        [X] Throw an IllegalArgumentException when a playlist of the given name already exists in the 'createPlaylist' method
+        [X] Complete the 'getPlaylist' method
+        [X] Complete the 'addSongToPlaylist' method
+        [X] Complete the 'findSongByName' method
+        [X] Complete the 'findSongByArtist' method
     MP3Player.java
-        [ ] Run the 'main' method and try multiple work flows
+        [X] Run the 'main' method and try multiple work flows
 
 TEST TASKS:
     SongDatabaseTest.java
-        [ ] Write the 'testAddDeleteSong' test method
-        [ ] Write the 'testAddGetDeletePlaylist' test method
-        [ ] Run every other test
+        [X] Write the 'testAddDeleteSong' test method
+        [X] Write the 'testAddGetDeletePlaylist' test method
+        [X] Run every other test
 
 SHORT ANSWERS:
     // TODO FOR HOMEWORK: Answer each question, and note many don't have a 'right answer' so just answer honestly
-    [ ] The MP3Player is a console application, what features do you wish were added?
-        // ANSWER HERE:
+    [X] The MP3Player is a console application, what features do you wish were added?
+        // ANSWER HERE: When Playing a Song, there are no choices/options of songs, the user needs to browse in the song library first before the user will know which song to play. Also, this is also applicable when playing a playlist
 
-    [ ] Pick any feature you mentioned in the last question. Do you think you could implement that feature with your current knowledge? If yes explain the basic thought processing of adding that feature, if not explain why.
-        // ANSWER HERE:
+    [X] Pick any feature you mentioned in the last question. Do you think you could implement that feature with your current knowledge? If yes explain the basic thought processing of adding that feature, if not explain why.
+        // ANSWER HERE: If I could implement that feature of having options of songs so that the user can choose which songs to play, I can implement it. The "Show Song Library" method can be called when "Play Song" is chosen so that the system will display the list of available songs first and user can just type which song option he/she wants to play.
 
-    [ ] What is a loop?
-        // ANSWER HERE:
+    [X] What is a loop?
+        // ANSWER HERE: a loop is an iteration of instructions that can be done in a program.
 
-    [ ] Write what each of these loops does in your own words:
-        // FOR LOOP:
-        // WHILE LOOP:
-        // DO WHILE:
+    [X] Write what each of these loops does in your own words:
+        // FOR LOOP: For as long as the condition is met, then the loop continues, but if not, the loop ends.
+        // WHILE LOOP: While the condition is true, the loop will continue, and if not, the loop ends.
+        // DO WHILE: Do a certain action first, and then while the condition is true, the action will be repeated/done again, but if not, the loop ends.
 
-    [ ] Why were 'infinite loops' used in this project? (See UserHelperMethods.displayOptionsAndWaitForValidOption(String[] options) for a reference)
-        // ANSWER HERE:
+    [X] Why were 'infinite loops' used in this project? (See UserHelperMethods.displayOptionsAndWaitForValidOption(String[] options) for a reference)
+        // ANSWER HERE: 'infinite loops' are used so that if the user entered the wrong value, the program will not end. Instead, the program will re-display the options available
 
-    [ ] This project has 3 packages (models, resources, and utils). Describe each one.
-        // MODELS:
-        // RESOURCES:
-        // UTILS:
+    [X] This project has 3 packages (models, resources, and utils). Describe each one.
+        // MODELS: the models folder contains the specific implementation per model. All the getters and setters and main methods are implemented here.
+        // RESOURCES: the resources folder contains the list of options used in MP3Player. It is implemented so that if there is a new option, we can easily add it under resources folder. Also, the options Strings in the resources are not limited to only for MP3Player, these string options can also be used by other models. We can also say that global variables are implemented here in the resources folder.
+        // UTILS: The utils folder contains the helper methods. These are generic methods which are not specific to MP3Player, Song, and SongDatabase. The methods here can easily be called and reused when new model is created.
