@@ -19,10 +19,10 @@ TEST TASKS:
 SHORT ANSWERS:
     // TODO FOR HOMEWORK: Answer each question, and note many don't have a 'right answer' so just answer honestly
     [X] The MP3Player is a console application, what features do you wish were added?
-        // ANSWER HERE: When Playing a Song, there are no choices/options of songs, the user needs to browse in the song library first before the user will know which song to play. Also, this is also applicable when playing a playlist
+        // ANSWER HERE: I wish there is a feature to play random songs or shuffle play.
 
     [X] Pick any feature you mentioned in the last question. Do you think you could implement that feature with your current knowledge? If yes explain the basic thought processing of adding that feature, if not explain why.
-        // ANSWER HERE: If I could implement that feature of having options of songs so that the user can choose which songs to play, I can implement it. The "Show Song Library" method can be called when "Play Song" is chosen so that the system will display the list of available songs first and user can just type which song option he/she wants to play.
+        // ANSWER HERE: If I were to implement playing random songs, then I would put Shuffle play in the last option (where all songs are displayed), and if the user chose that "Shuffle Play" option, the program will generate a random number and will play the song corresponding to that random number.
 
     [X] What is a loop?
         // ANSWER HERE: a loop is an iteration of instructions that can be done in a program.
