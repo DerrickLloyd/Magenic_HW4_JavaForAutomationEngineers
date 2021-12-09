@@ -214,16 +214,14 @@ public class SongDatabase {
      */
     public List<Song> findSongByName(String songName) {
         // TODO FOR HOMEWORK: Remove the line below, and return a list of songs that match the given song name
-        if (songArchive.toString().contains(songName)) {
-            List<Song> listOfSongs = new ArrayList<Song>();
-            for (Song song : songArchive) {
-                    listOfSongs.add(song);
-            }
-            return listOfSongs;
+
+        List<Song> listOfSongs = new ArrayList<Song>();
+        for (Song song : songArchive) {
+            if (song.getName().contains(songName))
+                listOfSongs.add(song);
         }
-        else{
-            return Collections.emptyList();
-        }
+        return listOfSongs;
+
     }
 
     /**
@@ -234,16 +232,12 @@ public class SongDatabase {
      */
     public List<Song> findSongsByArtist(String artist) {
         // TODO FOR HOMEWORK: Remove the line below, and return a list of songs that match the given artist
-        if (songArchive.toString().contains(artist)) {
-            List<Song> listOfSongs = new ArrayList<Song>();
-            for (Song song : songArchive) {
+        List<Song> listOfSongs = new ArrayList<Song>();
+        for (Song song : songArchive) {
+            if (song.getArtist().contains(artist))
                 listOfSongs.add(song);
-            }
-            return listOfSongs;
         }
-        else{
-            return Collections.emptyList();
-        }
+        return listOfSongs;
     }
 
     /**
